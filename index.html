@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OviAi - AI Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@700;900&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+    <!-- Scroll progress bar -->
+    <div id="progressBar"></div>
+
+    <!-- Intro Video Overlay -->
+    <div id="introOverlay">
+        <video id="introVideo" autoplay muted playsinline>
+            <source src="assets/intro-video.mp4" type="video/mp4">
+        </video>
+        <button id="skipIntro">Skip</button>
+    </div>
+
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu" id="hamburgerMenu">
+        <div class="hamburger-lines">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-header">
+                <h3>Menu</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="index.html" class="sidebar-link">Home</a>
+                <a href="about.html" class="sidebar-link">About Us</a>
+                <a href="contact.html" class="sidebar-link">Contact Us</a>
+                <a href="faq.html" class="sidebar-link">FAQ</a>
+            </nav>
+            <div class="sidebar-toggle">
+                <span>Theme</span>
+                <label class="switch">
+                    <input type="checkbox" id="sidebarToggleMode">
+                    <span class="slider">
+                        <span class="moon">🌙</span>
+                        <span class="sun">☀️</span>
+                    </span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="mainContent">
+        <!-- Header -->
+        <header id="mainHeader">
+            <div class="header-container">
+                <div class="header-aura"></div>
+                <h1 class="logo">OviAi</h1>
+                <div class="logo-sphere" id="logoSphere">
+                    <div class="sphere-ring ring-1"></div>
+                    <div class="sphere-ring ring-2"></div>
+                    <div class="sphere-ring ring-3"></div>
+                    <div class="sphere-core">AI</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Search Container - Now separate from header, will become sticky -->
+        <div class="search-wrapper" id="searchWrapper">
+            <div class="search-container" id="searchContainer">
+                <input type="text" id="search" placeholder="Search AI platforms...">
+                <button id="compareBtn" class="compare-button">Compare AI</button>
+            </div>
+        </div>
+
+        <!-- AI Comparison Panel -->
+        <div class="comparison-panel" id="comparisonPanel">
+            <div class="comparison-content">
+                <h3>Select AI to Compare</h3>
+                <div class="comparison-search">
+                    <input type="text" id="compareSearch" placeholder="Search AI tools...">
+                </div>
+                <div class="comparison-list" id="comparisonList"></div>
+                <div class="comparison-actions">
+                    <button id="closeCompare" class="close-compare">Close</button>
+                    <button id="startCompare" class="start-compare">Compare Selected</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Category Menu -->
+        <nav class="ai-menu">
+            <button class="ai-category active" data-target="all">All AI</button>
+            <button class="ai-category" data-target="conversational">Conversational AI</button>
+            <button class="ai-category" data-target="image">Image Generation AI</button>
+            <button class="ai-category" data-target="video">Video & Animation AI</button>
+            <button class="ai-category" data-target="voice">Voiceover AI</button>
+            <button class="ai-category" data-target="coding">Coding AI</button>
+            <button class="ai-category" data-target="hosting">Hosting Platforms</button>
+        </nav>
+
+        <!-- AI Card Containers -->
+        <div id="aiContainers">
+            <div class="card-container show-all" id="allContainer"></div>
+            <div class="card-container" id="conversationalContainer"></div>
+            <div class="card-container" id="imageContainer"></div>
+            <div class="card-container" id="videoContainer"></div>
+            <div class="card-container" id="voiceContainer"></div>
+            <div class="card-container" id="codingContainer"></div>
+            <div class="card-container" id="hostingContainer"></div>
+        </div>
+    </div>
+
+    <!-- Modal Popup -->
+    <div class="modal" id="modal">
+        <div class="modal-content" id="modalContent">
+            <button class="modal-close" id="modalClose">
+                <span></span>
+                <span></span>
+            </button>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Fireflies Container -->
+    <div class="fireflies-container" id="firefliesContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
