@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - OviAi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@700;900&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+    <!-- Scroll progress bar -->
+    <div id="progressBar"></div>
+
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu" id="hamburgerMenu">
+        <div class="hamburger-lines">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-header">
+                <h3>Menu</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="index.html" class="sidebar-link">Home</a>
+                <a href="about.html" class="sidebar-link">About Us</a>
+                <a href="contact.html" class="sidebar-link">Contact Us</a>
+                <a href="faq.html" class="sidebar-link">FAQ</a>
+            </nav>
+            <div class="sidebar-toggle">
+                <span>Theme</span>
+                <label class="switch">
+                    <input type="checkbox" id="sidebarToggleMode">
+                    <span class="slider">
+                        <span class="moon">🌙</span>
+                        <span class="sun">☀️</span>
+                    </span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="page-content">
+        <div class="glass-container">
+            <h1 class="page-title">About OviAi</h1>
+
+            <div class="about-section">
+                <div class="about-card reveal">
+                    <h2>Our Mission</h2>
+                    <p>OviAi is a cutting-edge AI hub dedicated to showcasing the most powerful artificial intelligence tools available today. Founded by a passionate web developer, tech entrepreneur, and AI enthusiast, our platform serves as the ultimate destination for anyone looking to harness the power of AI technology. We believe in democratizing access to AI tools, making them discoverable and accessible to creators, developers, businesses, and curious minds alike. Our carefully curated collection spans across conversational AI, image generation, video creation, voice synthesis, coding assistance, and hosting platforms.</p>
+                </div>
+
+                <div class="about-card reveal">
+                    <h2>Who We Are</h2>
+                    <p>Hi, I'm Ovi, the founder of OviAi. As a student, web developer, and technology entrepreneur, I've always been fascinated by the transformative potential of artificial intelligence. This platform represents my vision of creating a centralized hub where the best AI tools can be discovered, compared, and utilized. With a deep understanding of both technical development and user experience, I've designed OviAi to be intuitive, visually stunning, and functionally robust. My journey in tech has been driven by a relentless curiosity and a desire to build solutions that make complex technologies accessible to everyone.</p>
+                </div>
+
+                <div class="about-card reveal">
+                    <h2>What We Offer</h2>
+                    <p>OviAi provides a comprehensive directory of AI platforms, each carefully selected for their innovation, reliability, and impact. From industry giants like ChatGPT and MidJourney to emerging tools pushing the boundaries of creativity, we cover the entire spectrum of AI applications. Our platform features detailed descriptions, direct links, and an intuitive comparison system that helps users find the perfect tool for their specific needs. Whether you're a content creator looking for image generation tools, a developer seeking coding assistants, or a business exploring automation solutions, OviAi has you covered.</p>
+                </div>
+
+                <div class="about-card reveal">
+                    <h2>Our Vision</h2>
+                    <p>We envision a future where AI tools are seamlessly integrated into every aspect of creative and professional work. OviAi aims to be at the forefront of this revolution, constantly evolving to include the latest innovations in artificial intelligence. Our commitment is to provide a platform that not only lists tools but educates and inspires users to explore the limitless possibilities of AI. As the technology landscape continues to evolve, OviAi will remain your trusted companion in navigating the exciting world of artificial intelligence, helping you stay ahead of the curve and unlock new potentials.</p>
+                </div>
+            </div>
+
+            <button class="back-button" onclick="window.location.href='index.html'">
+                <span>Back to Main Page</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Fireflies Container -->
+    <div class="fireflies-container" id="firefliesContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
