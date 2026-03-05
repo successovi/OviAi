@@ -64,13 +64,13 @@ body::before {
 }
 
 body.dark::before {
-    background-image: url('assets/dark-bg.png');
+    background-image: url('dark-bg.png');
     opacity: 0.4;
     filter: brightness(0.8) contrast(1.1);
 }
 
 body.light::before {
-    background-image: url('assets/light-bg.png');
+    background-image: url('light-bg.png');
     opacity: 0.5;
     filter: brightness(1.1) contrast(0.95);
 }
